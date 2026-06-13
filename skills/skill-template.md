@@ -1,23 +1,44 @@
-# Skill: <Skill Name>
+# SKILL.md Template
 
-**Summary:** A one-line summary of the skill.
+Copy the block below into `skills/<your-skill>/SKILL.md` and fill it in.
 
-**Why it matters:** Short justification and personal impact.
+```markdown
+---
+name: your-skill-name
+description: What the skill does. Use when [specific trigger conditions — the situations where Claude should reach for this].
+---
 
-**Goal:** What "done" looks like (specific, measurable outcome).
+# Your Skill Name
 
-**Milestones / Steps:**
-- [ ] Step 1 — e.g., read/get familiar
-- [ ] Step 2 — practice small projects
-- [ ] Step 3 — apply in real context
+One-line statement of what this skill helps accomplish.
 
-**Resources:**
-- Link 1
-- Link 2
+## Instructions
 
-**Notes & Reflections:**
-- Journal entries, lessons learned, tips
+### Step 1: [First major step]
+Clear explanation of what to do.
 
-**Progress:**
-- Started: YYYY-MM-DD
-- Completed: 
+### Step 2: [Next step]
+...
+
+### Step N: Produce the output
+Describe the final deliverable. If it uses a template, link it: [references/template.md](references/template.md).
+
+## Principles
+- Key rule or quality bar to hold to.
+- Another guiding principle.
+```
+
+## Tips
+- **`description` is the most important field** — it's what Claude uses to decide *when* to trigger the skill. Be specific about both the task and the trigger.
+- Keep `SKILL.md` lean. Put long templates, examples, or reference material in a `references/` folder and link to them.
+- Use numbered steps for anything procedural — they make the skill reliable to follow.
+- Folder name and `name:` should match, in kebab-case.
+
+## Optional structure
+```
+skills/your-skill-name/
+  SKILL.md            # required
+  references/         # optional: templates, examples, docs
+  scripts/            # optional: helper scripts
+  assets/             # optional: static files
+```
