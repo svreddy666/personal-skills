@@ -13,6 +13,7 @@ A skill is a folder of instructions and resources that Claude loads on demand to
 
 ## Skills
 - [decision-making](skills/decision-making/SKILL.md) — turn messy input into a structured leadership decision doc (options, tradeoffs, recommendation, reversibility).
+- [system-design-review](skills/system-design-review/SKILL.md) — review a system design doc and produce a right-sized critique (researches the topics, calibrates to actual requirements).
 
 ## Using a skill
 Make a skill available to Claude Code by placing (or symlinking) its folder into `~/.claude/skills/`:
